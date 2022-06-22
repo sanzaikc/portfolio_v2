@@ -77,11 +77,9 @@ export default function Header() {
             </a>
           ))}
           <li>
-            <AppButton sm>
-              <a href="https://drive.google.com/uc?id=1QABoyC70dTtS3k75B-v0I93WfIpV6ibn">
-                Resume
-              </a>
-            </AppButton>
+            <a href="https://drive.google.com/uc?id=1QABoyC70dTtS3k75B-v0I93WfIpV6ibn">
+              <AppButton sm>Resume</AppButton>
+            </a>
           </li>
         </ul>
       </div>

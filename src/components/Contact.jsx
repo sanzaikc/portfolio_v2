@@ -18,9 +18,9 @@ export default function Contact() {
         inbox is within your access.
       </div>
       <div>
-        <AppButton>
-          <a href="mailto:sanzaikc@gmail.com">Say Hi</a>
-        </AppButton>
+        <a href="mailto:sanzaikc@gmail.com">
+          <AppButton>Say Hi</AppButton>
+        </a>
       </div>
     </div>
   );
