@@ -64,7 +64,11 @@ export default function Header() {
     >
       <div className=" flex items-center justify-between lg:px-20">
         {/* <div className="text-2xl font-semibold">K S</div> */}
-        <img src={Logo} alt="Logo" className="h-14 object-cover" />
+        <img
+          src={Logo}
+          alt="Logo"
+          className="h-12 object-cover object-center"
+        />
         <ul className="flex items-center space-x-10 text-sm">
           {navLinks.map((link, index) => (
             <a
