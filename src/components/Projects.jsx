@@ -60,11 +60,11 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="pb-20 lg:pb-0">
       <PrimaryHeading index={3}>Some projects I've worked in</PrimaryHeading>
       <br />
       <br />
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-6">
         {projectList.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

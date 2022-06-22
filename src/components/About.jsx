@@ -16,12 +16,12 @@ export default function About() {
   ];
 
   return (
-    <div id="about" className="min-h-screen">
+    <div id="about" className="min-h-screen pb-20 lg:pb-0">
       <PrimaryHeading index={1}>About Me</PrimaryHeading>
       <br />
       <div className="flex flex-col space-y-8  lg:flex-row-reverse lg:space-y-0">
-        <div className="h-96 w-full rounded border border-blue-200"></div>
-        <div className="w-3/5 flex-shrink-0 text-lg text-gray-400 lg:mr-10">
+        <div className="h-72 w-full rounded border border-blue-200 lg:h-96"></div>
+        <div className="w-full flex-shrink-0 text-lg text-gray-400 lg:mr-10 lg:w-3/5">
           <p>
             Hi There, I'm Sanjay Khatri! I'm a web developer, residing in Nepal.
             I have serious passion for creating intuitive, dynamic user

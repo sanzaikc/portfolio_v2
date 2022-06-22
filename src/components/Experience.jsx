@@ -19,7 +19,7 @@ const workExperiences = [
 
 export default function Experience() {
   return (
-    <div id="experience" className="mb-16 flex min-h-screen">
+    <div id="experience" className="flex min-h-screen pb-20 lg:pb-0">
       <div className="hidden lg:block lg:w-1/3"></div>
       <div className="flex w-full flex-col space-y-10 lg:w-2/3">
         <PrimaryHeading index={2}>Where have i worked?</PrimaryHeading>
