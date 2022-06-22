@@ -1,6 +1,10 @@
 import AppLayout from "./layouts/AppLayout";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
+import Works from "./components/Works";
 
 function App() {
   return (
@@ -8,6 +12,10 @@ function App() {
       <Header />
       <div className="app-container">
         <Intro />
+        <About />
+        <Experience />
+        <Works />
+        <Contact />
       </div>
     </AppLayout>
   );

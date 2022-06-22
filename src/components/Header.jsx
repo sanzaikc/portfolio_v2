@@ -4,6 +4,10 @@ import AppButton from "./AppButton";
 export default function Header() {
   const links = [
     {
+      name: "Intro",
+      path: "",
+    },
+    {
       name: "About",
       path: "",
     },
@@ -12,7 +16,7 @@ export default function Header() {
       path: "",
     },
     {
-      name: "Work",
+      name: "Works",
       path: "",
     },
     {
@@ -21,12 +25,13 @@ export default function Header() {
     },
   ];
   return (
-    <div className="py-6 shadow-lg">
+    <div className="sticky top-0 bg-slate-900 py-6 shadow-lg">
       <div className="app-container flex items-center justify-between">
         <div className="secondary-font text-2xl font-semibold">S K</div>
         <ul className="flex items-center space-x-10 text-sm">
           {links.map((link, index) => (
-            <li
+            <a
+              href={`/#${link.name.toLowerCase()}`}
               key={link.name}
               className="group flex cursor-pointer items-baseline space-x-2"
             >
@@ -34,7 +39,7 @@ export default function Header() {
               <span className="font-semibold tracking-wider text-gray-500 group-hover:text-blue-300">
                 {link.name}
               </span>
-            </li>
+            </a>
           ))}
           <li>
             <AppButton sm>Resume</AppButton>

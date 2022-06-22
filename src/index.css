@@ -19,7 +19,10 @@ code {
     monospace;
 }
 
-
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
 
 .app-container {
   @apply mx-auto max-w-7xl;
