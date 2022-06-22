@@ -16,7 +16,7 @@ function App() {
   return (
     <AppLayout>
       <Header />
-      <div className="app-container">
+      <div className="app-container px-4 lg:px-0">
         <Intro />
         <About />
         <Experience />

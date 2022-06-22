@@ -57,6 +57,14 @@ export default function Header() {
     }
   }, [lastScrollY]);
 
+  useEffect(() => {
+    const appLayout = document.getElementById("app-layout");
+    if (!appLayout) return;
+
+    if (showMenu) appLayout.classList.add("overflow-hidden");
+    else appLayout.classList.remove("overflow-hidden");
+  }, [showMenu]);
+
   return (
     <>
       <div
@@ -101,7 +109,15 @@ export default function Header() {
         </div>
       </div>
 
-      <div className=""></div>
+      <div
+        className={`absolute inset-0 z-10 h-screen translate-x-full bg-slate-900 bg-opacity-60 transition-transform duration-200 ease-in lg:hidden ${
+          showMenu && "translate-x-0"
+        }`}
+      >
+        <div className="absolute right-0 h-screen w-2/3 bg-slate-800 p-6">
+          <div onClick={() => setShowMenu(false)}>Close</div>
+        </div>
+      </div>
     </>
   );
 }

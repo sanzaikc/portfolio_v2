@@ -4,7 +4,7 @@ import PrimaryHeading from "./PrimaryHeading";
 const workExperiences = [
   {
     company: "Softweb Developers",
-    duration: "09/2022 - 04/2022",
+    duration: "09/2020 - 04/2022",
     location: "Hetauda, Nepal",
     website: "https://softwebdevelopers.com",
     responsibilities: [
