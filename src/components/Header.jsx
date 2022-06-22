@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import AppButton from "./AppButton";
+import { ReactComponent as Close } from "../assets/close.svg";
 import Logo from "../assets/signature.png";
 
 const navLinks = [
@@ -96,7 +97,10 @@ export default function Header() {
           </ul>
 
           <div className="lg:hidden" onClick={() => setShowMenu(true)}>
-            Menu
+            <div className="flex flex-col justify-end space-y-2">
+              <div className="w-6 border-t"></div>
+              <div className="w-4 border-t"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,12 +111,14 @@ export default function Header() {
         }`}
         onClick={() => setShowMenu(false)}
       >
-        <div className="absolute right-0 h-screen w-2/3 bg-slate-800 p-6">
-          <div onClick={() => setShowMenu(false)} className="mb-6">
-            Close
+        <div className="absolute right-0 h-screen w-2/3 bg-slate-800 ">
+          <div className="flex justify-end">
+            <div onClick={() => setShowMenu(false)}>
+              <Close className="h-10 text-gray-400" />
+            </div>
           </div>
 
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-10 p-6 text-lg">
             {navLinks.map((link, index) => (
               <a
                 href={`/#${link.name.toLowerCase()}`}
@@ -130,7 +136,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
             >
-              <AppButton sm>Resume</AppButton>
+              <AppButton>Resume</AppButton>
             </a>
           </div>
         </div>
