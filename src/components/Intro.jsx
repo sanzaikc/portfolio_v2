@@ -3,9 +3,12 @@ import AppButton from "./AppButton";
 
 export default function Intro() {
   return (
-    <div id="intro" className="flex h-screen flex-col space-y-8 py-16 text-lg">
+    <div
+      id="intro"
+      className="flex flex-col space-y-8 py-20 lg:h-screen lg:text-lg"
+    >
       <div className="secondary-font">Hi, my name is</div>
-      <div className="flex flex-col space-y-4 text-7xl font-bold">
+      <div className="flex flex-col space-y-4 text-4xl font-bold lg:text-7xl">
         <div className="text-gray-100">Sanjay Khatri</div>
         <div className="text-gray-400">I am a web developer</div>
       </div>
