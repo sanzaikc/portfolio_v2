@@ -21,7 +21,8 @@ export default function About() {
     <div id="about" className="min-h-screen pb-20 lg:pb-0">
       <PrimaryHeading index={1}>About Me</PrimaryHeading>
       <br />
-      <div className="flex flex-col space-y-8  lg:flex-row-reverse lg:space-y-0">
+      <br />
+      <div className="flex flex-col space-y-8 lg:flex-row-reverse  lg:space-y-0">
         <div className="group relative h-72 w-full lg:h-[400px] lg:w-80">
           <img
             src={Profile}
