@@ -15,7 +15,7 @@ export default function Intro() {
         graduate fresher, currently looking for a job.
       </p>
       <div>
-        <AppButton sm>Hire Me</AppButton>
+        <AppButton>Hire Me</AppButton>
       </div>
     </div>
   );
