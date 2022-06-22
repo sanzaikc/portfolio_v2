@@ -1,4 +1,6 @@
 import React from "react";
+
+import Profile from "../assets/profile.jpg";
 import PrimaryHeading from "./PrimaryHeading";
 
 export default function About() {
@@ -20,7 +22,14 @@ export default function About() {
       <PrimaryHeading index={1}>About Me</PrimaryHeading>
       <br />
       <div className="flex flex-col space-y-8  lg:flex-row-reverse lg:space-y-0">
-        <div className="h-72 w-full rounded border border-blue-200 lg:h-96"></div>
+        <div className="relative h-72 w-full rounded border border-blue-400 lg:h-[400px] lg:w-80">
+          <div className="absolute inset-0 bg-blue-600 bg-opacity-40 hover:bg-opacity-0"></div>
+          <img
+            src={Profile}
+            alt="Profile"
+            className="h-full w-full object-cover object-center"
+          />
+        </div>
         <div className="w-full flex-shrink-0 text-lg text-gray-400 lg:mr-10 lg:w-3/5">
           <p>
             Hi There, I'm Sanjay Khatri! I'm a web developer, residing in Nepal.
