@@ -21,7 +21,7 @@ export default function Experience() {
   return (
     <div id="experience" className="flex h-screen">
       <div className="hidden lg:block lg:w-1/3"></div>
-      <div className="flex w-full flex-col space-y-8 lg:w-2/3">
+      <div className="flex w-full flex-col space-y-10 lg:w-2/3">
         <PrimaryHeading index={2}>Where have i worked?</PrimaryHeading>
         {workExperiences.map((exp, index) => (
           <div key={index}>

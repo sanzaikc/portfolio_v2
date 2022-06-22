@@ -50,12 +50,18 @@ const projectList = [
     tags: ["Node", "Express", "React"],
     github: "https://github.com/sanzaikc/porfolio_server",
   },
+  {
+    name: "Personal Portfolio V2",
+    description: "Portfolio application version 2",
+    tags: ["React", "Tailwind"],
+    github: "https://github.com/sanzaikc/portfolio_v2",
+  },
 ];
 
 export default function Projects() {
   return (
     <div id="projects">
-      <PrimaryHeading index={2}>Some projects I've worked in</PrimaryHeading>
+      <PrimaryHeading index={3}>Some projects I've worked in</PrimaryHeading>
       <br />
       <br />
       <div className="grid grid-cols-3 gap-6">

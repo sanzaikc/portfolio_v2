@@ -11,7 +11,7 @@ export default function Contact() {
         <span className="secondary-font">4 .</span> <span> Now What ? </span>
       </div>
       <div className="text-5xl font-bold text-gray-400">Get in touch</div>
-      <div className="text-center text-gray-500 lg:w-1/2 lg:text-lg">
+      <div className="text-center text-gray-500 lg:w-2/3 lg:text-lg">
         I'm looking for new job opportunity, so if you think i'm{" "}
         <span className="text-blue-300">THE ONE</span>, make sure to drop a
         message. Whether you have any query or want to have a conversation, my

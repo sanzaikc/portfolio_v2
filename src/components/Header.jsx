@@ -57,7 +57,7 @@ export default function Header() {
 
   return (
     <div
-      className={`hidden transform bg-slate-900 py-6 shadow-lg transition-all duration-300 ease-in-out lg:block ${
+      className={`z-10 hidden transform bg-slate-900 py-6 shadow-lg transition-all duration-300 ease-in-out lg:block ${
         show ? "sticky top-0 translate-y-0" : "-translate-y-full"
       }`}
     >
