@@ -5,9 +5,14 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
-import Works from "./components/Works";
+import Projects from "./components/Projects";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Sanjay Khatri";
+  }, []);
+
   return (
     <AppLayout>
       <Header />
@@ -15,7 +20,7 @@ function App() {
         <Intro />
         <About />
         <Experience />
-        <Works />
+        <Projects />
         <Contact />
         <Footer />
       </div>

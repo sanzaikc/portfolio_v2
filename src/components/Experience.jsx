@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryHeading from "./PrimaryHeading";
 
 const workExperiences = [
   {
@@ -18,13 +19,10 @@ const workExperiences = [
 
 export default function Experience() {
   return (
-    <div id="experience" className="flex flex-col space-y-8 py-24">
-      <div className="flex items-baseline space-x-2 font-bold">
-        <span className="secondary-font text-2xl">2 . </span>
-        <span className="text-4xl text-gray-400">Where have i worked?</span>
-      </div>
-
-      <div className="lg:w-2/3">
+    <div id="experience" className="flex">
+      <div className="hidden lg:block lg:w-1/3"></div>
+      <div className="flex w-full flex-col space-y-8 lg:w-2/3">
+        <PrimaryHeading index={2}>Where have i worked?</PrimaryHeading>
         {workExperiences.map((exp, index) => (
           <div key={index}>
             <div className="text-2xl font-bold">
