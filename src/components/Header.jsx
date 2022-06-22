@@ -1,4 +1,5 @@
 import React from "react";
+import AppButton from "./AppButton";
 
 export default function Header() {
   const links = [
@@ -36,9 +37,7 @@ export default function Header() {
             </li>
           ))}
           <li>
-            <button className="rounded border-2 border-blue-300 px-4 py-2 font-semibold">
-              Resume
-            </button>
+            <AppButton sm>Resume</AppButton>
           </li>
         </ul>
       </div>
