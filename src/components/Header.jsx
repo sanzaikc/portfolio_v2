@@ -57,18 +57,10 @@ export default function Header() {
     }
   }, [lastScrollY]);
 
-  useEffect(() => {
-    const appLayout = document.getElementById("app-layout");
-    if (!appLayout) return;
-
-    if (showMenu) appLayout.classList.add("overflow-hidden");
-    else appLayout.classList.remove("overflow-hidden");
-  }, [showMenu]);
-
   return (
     <>
       <div
-        className={`container z-10 mx-auto  transform bg-slate-900 py-2 shadow-lg transition-all duration-300 ease-in-out lg:py-6 ${
+        className={`container z-10 mx-auto  transform bg-slate-900 py-2 pr-3 shadow-lg transition-all duration-300 ease-in-out lg:py-6 lg:px-0 ${
           show ? "sticky top-0 translate-y-0" : "-translate-y-full"
         }`}
       >
@@ -110,12 +102,37 @@ export default function Header() {
       </div>
 
       <div
-        className={`absolute inset-0 z-10 h-screen translate-x-full bg-slate-900 bg-opacity-60 transition-transform duration-200 ease-in lg:hidden ${
+        className={`fixed inset-0 z-10 h-screen translate-x-full bg-slate-900 bg-opacity-60 transition-transform duration-200 ease-in lg:hidden ${
           showMenu && "translate-x-0"
         }`}
+        onClick={() => setShowMenu(false)}
       >
         <div className="absolute right-0 h-screen w-2/3 bg-slate-800 p-6">
-          <div onClick={() => setShowMenu(false)}>Close</div>
+          <div onClick={() => setShowMenu(false)} className="mb-6">
+            Close
+          </div>
+
+          <div className="flex flex-col space-y-6">
+            {navLinks.map((link, index) => (
+              <a
+                href={`/#${link.name.toLowerCase()}`}
+                key={link.name}
+                className="group flex cursor-pointer items-baseline space-x-2"
+              >
+                <span className="secondary-font">{index} .</span>
+                <span className="font-semibold tracking-wider text-gray-500 group-hover:text-blue-300">
+                  {link.name}
+                </span>
+              </a>
+            ))}
+            <a
+              href="https://drive.google.com/uc?id=1StGsEU2aY3X7pxX1b6fYzN6hCRv_gkj5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AppButton sm>Resume</AppButton>
+            </a>
+          </div>
         </div>
       </div>
     </>
