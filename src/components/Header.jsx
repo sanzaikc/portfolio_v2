@@ -57,11 +57,11 @@ export default function Header() {
 
   return (
     <div
-      className={`z-10 hidden transform bg-slate-900 py-6 shadow-lg transition-all duration-300 ease-in-out lg:block ${
+      className={`container z-10 mx-auto hidden transform bg-slate-900 py-6 shadow-lg transition-all duration-300 ease-in-out lg:block ${
         show ? "sticky top-0 translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="flex items-center justify-between lg:px-20">
+      <div className=" flex items-center justify-between lg:px-20">
         <div className="text-2xl font-semibold">K S</div>
         <ul className="flex items-center space-x-10 text-sm">
           {navLinks.map((link, index) => (

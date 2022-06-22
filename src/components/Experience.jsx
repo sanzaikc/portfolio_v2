@@ -19,13 +19,13 @@ const workExperiences = [
 
 export default function Experience() {
   return (
-    <div id="experience" className="flex h-screen">
+    <div id="experience" className="mb-16 flex min-h-screen">
       <div className="hidden lg:block lg:w-1/3"></div>
       <div className="flex w-full flex-col space-y-10 lg:w-2/3">
         <PrimaryHeading index={2}>Where have i worked?</PrimaryHeading>
         {workExperiences.map((exp, index) => (
           <div key={index}>
-            <div className="text-2xl font-bold">
+            <div className="text-lg font-bold lg:text-2xl">
               <span className="text-gray-400">@</span>
               <a href={exp.website} target="_blank" rel="noreferrer">
                 <span className="underline">{exp.company}</span>{" "}
@@ -34,7 +34,7 @@ export default function Experience() {
             </div>
             <div className="text-sm italic text-gray-500">{exp.duration}</div>
             <br />
-            <ul className="list-disc text-lg">
+            <ul className="list-disc lg:text-lg">
               {exp.responsibilities.map((resp, index) => (
                 <li key={index} className="list-inside text-gray-400 ">
                   {resp}

@@ -64,7 +64,7 @@ export default function Projects() {
       <PrimaryHeading index={3}>Some projects I've worked in</PrimaryHeading>
       <br />
       <br />
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         {projectList.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
