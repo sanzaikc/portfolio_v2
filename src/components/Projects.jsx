@@ -54,7 +54,7 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="py-24">
+    <div id="projects">
       <PrimaryHeading index={2}>Some projects I've worked in</PrimaryHeading>
       <br />
       <br />
