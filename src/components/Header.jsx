@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import AppButton from "./AppButton";
+import Logo from "../assets/signature.png";
 
 const navLinks = [
   {
@@ -62,7 +63,8 @@ export default function Header() {
       }`}
     >
       <div className=" flex items-center justify-between lg:px-20">
-        <div className="text-2xl font-semibold">K S</div>
+        {/* <div className="text-2xl font-semibold">K S</div> */}
+        <img src={Logo} alt="Logo" className="h-14 object-cover" />
         <ul className="flex items-center space-x-10 text-sm">
           {navLinks.map((link, index) => (
             <a
@@ -77,7 +79,11 @@ export default function Header() {
             </a>
           ))}
           <li>
-            <a href="https://drive.google.com/uc?id=1QABoyC70dTtS3k75B-v0I93WfIpV6ibn">
+            <a
+              href="https://drive.google.com/uc?id=1StGsEU2aY3X7pxX1b6fYzN6hCRv_gkj5"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AppButton sm>Resume</AppButton>
             </a>
           </li>
