@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex  h-screen flex-col items-center justify-center space-y-8"
+      className="flex flex-col items-center justify-center space-y-8 lg:min-h-screen"
     >
       <div className="text-lg">
         <span className="secondary-font">4 .</span> <span> Now What ? </span>

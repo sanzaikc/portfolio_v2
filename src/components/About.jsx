@@ -18,7 +18,7 @@ export default function About() {
   ];
 
   return (
-    <div id="about" className="min-h-screen pb-20 lg:pb-0">
+    <div id="about" className="pb-20 lg:min-h-screen lg:pb-0">
       <PrimaryHeading index={1}>About Me</PrimaryHeading>
       <br />
       <br />
