@@ -46,7 +46,7 @@ html{
 }
 
 .app-container {
-  @apply mx-auto max-w-7xl;
+  @apply mx-auto max-w-5xl;
 }
 
 .secondary-font{

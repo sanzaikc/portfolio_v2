@@ -61,8 +61,8 @@ export default function Header() {
         show ? "sticky top-0 translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="app-container flex items-center justify-between">
-        <div className="secondary-font text-2xl font-semibold">S K</div>
+      <div className="flex items-center justify-between lg:px-20">
+        <div className="text-2xl font-semibold">K S</div>
         <ul className="flex items-center space-x-10 text-sm">
           {navLinks.map((link, index) => (
             <a
