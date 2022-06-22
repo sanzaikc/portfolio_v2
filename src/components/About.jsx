@@ -24,13 +24,13 @@ export default function About() {
       <br />
       <div className="flex flex-col space-y-8 lg:flex-row-reverse  lg:space-y-0">
         <div className="group relative h-72 w-full lg:h-[400px] lg:w-80">
+          <div className="absolute inset-0 translate-x-4 translate-y-4 rounded border-2 border-blue-400 border-opacity-25 transition duration-200 ease-in group-hover:translate-x-0 group-hover:translate-y-0"></div>
           <img
             src={Profile}
             alt="Profile"
-            className="h-full w-full rounded object-cover object-center"
+            className="absolute inset-0 h-full w-full rounded object-cover object-center"
           />
           <div className="absolute inset-0 rounded bg-blue-600 bg-opacity-40 transition-all duration-200 ease-out group-hover:bg-opacity-0"></div>
-          <div className="absolute inset-0 translate-x-4 translate-y-4 rounded border-2 border-blue-400 border-opacity-25 transition duration-200 ease-in group-hover:translate-x-0 group-hover:translate-y-0"></div>
         </div>
         <div className="w-full flex-shrink-0 text-lg text-gray-400 lg:mr-10 lg:w-3/5">
           <p>
