@@ -6,7 +6,7 @@ import { ReactComponent as ShareIcon } from "../assets/share.svg";
 
 export default function ProjectCard({ name, description, link, github, tags }) {
   return (
-    <div className="group flex h-80 w-full flex-col justify-between rounded bg-slate-800 p-6 shadow transition-transform duration-200 ease-out hover:-translate-y-2">
+    <div className="group flex h-80 w-full flex-col justify-between rounded bg-slate-800 p-6 shadow transition-transform duration-200 ease-out lg:hover:-translate-y-2">
       <div>
         <div className="flex items-center justify-between">
           <ProjectIcon className="-mt-3 h-10 font-bold" />
