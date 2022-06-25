@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="py-6 text-center text-sm text-gray-400">
-      Developed by Sanjay Khatri
+    <div className="secondary-font py-4 text-center text-sm font-semibold tracking-wide text-gray-600">
+      {`< Developed by Sanjay Khatri © ${new Date().getFullYear()} />`}
     </div>
   );
 }
