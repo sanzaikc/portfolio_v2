@@ -17,20 +17,18 @@ function App() {
   }, []);
 
   return (
-    <>
+    <AppLayout>
       <ParticleBackground />
-      <AppLayout>
-        <Header />
-        <div className="app-container px-4 lg:px-0">
-          <Intro />
-          <About />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-      </AppLayout>
-    </>
+      <Header />
+      <div className="app-container px-4 lg:px-0">
+        <Intro />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </AppLayout>
   );
 }
 

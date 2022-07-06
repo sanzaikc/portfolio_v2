@@ -18,7 +18,7 @@ const particleConfig = {
       },
       onHover: {
         enable: true,
-        mode: "bubble",
+        mode: "attract",
       },
     },
     modes: {
