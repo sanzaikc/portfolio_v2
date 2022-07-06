@@ -7,9 +7,8 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
-import Projects from "./components/Projects";
-
 import ParticleBackground from "./components/particlebg/ParticleBackground";
+import Projects from "./components/Projects";
 
 function App() {
   useEffect(() => {
