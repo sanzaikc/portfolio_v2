@@ -14,7 +14,13 @@ const projectList = [
     name: "Allied Power Engineering",
     description: "A website & CMS for transformer manufacturing industry.",
     tags: ["Vue", "Element-UI"],
-    link: "https://alliedpowereng.com/",
+    link: "https://alliedpowereng.com",
+  },
+  {
+    name: "Humtt",
+    description: "A B@B ecommerce platform for wholesalers and shop-owners.",
+    tags: ["Vue", "Tailwind"],
+    link: "https://humtt.com",
   },
   {
     name: "Sigma Auto Nepal",
@@ -33,13 +39,13 @@ const projectList = [
     description:
       "A Simple blog that leverage the power of GraphCMS for the contents",
     tags: ["GraphQL", "React", "TypeScript"],
-    link: "https://sanzai-graph-cms-blog.vercel.app/",
+    link: "https://sanzai-graph-cms-blog.vercel.app",
     github: "https://github.com/sanzaikc/graphCMS-blog",
   },
   {
     name: "Natour",
     description:
-      "A Node application made following the tutorial, while learning Node JS",
+      "A Node application made following the tutorial, while learning Node JS.",
     tags: ["Node", "Express"],
     github: "https://github.com/sanzaikc/Natour",
   },
@@ -52,7 +58,7 @@ const projectList = [
   },
   {
     name: "Personal Portfolio V2",
-    description: "Portfolio application version 2",
+    description: "Portfolio application version 2.",
     tags: ["React", "Tailwind"],
     github: "https://github.com/sanzaikc/portfolio_v2",
   },
