@@ -18,7 +18,7 @@ const projectList = [
   },
   {
     name: "Humtt",
-    description: "A B@B ecommerce platform for wholesalers and shop-owners.",
+    description: "A B2B ecommerce platform for wholesalers and shop-owners.",
     tags: ["Vue", "Tailwind"],
     link: "https://humtt.com",
   },
